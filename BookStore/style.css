@@ -1,0 +1,50 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: darkkhaki;
+}
+img {
+    width: 150px;
+    height: 200px;
+    border: 2px solid orange;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    vertical-align: middle;
+    text-align: center;
+}
+
+table {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+h1, nav {
+    text-align: center;
+}
+
+th, td {
+    padding: 20px;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: dimgray;
+    height: 100px;
+    text-align: center;
+}
+
+a:visited {
+    color: blue;
+}
