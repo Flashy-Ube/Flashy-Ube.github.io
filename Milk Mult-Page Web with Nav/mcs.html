@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Main Characters</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>Main Characters</h1>
+        </center>
+
+
+              <table cellpadding="6">
+<hr>
+            <tr>
+                <th>Protagonists</th>
+                <th>Names</th>
+                <th>Their Roles</th>
+            </tr>
+            <tr>
+                <td><img src="img/unicorn.png" alt="The Last Unicorn"></td>
+               <td>The Last Unicorn AKA Amalthea</td>
+		<td>The Unicorn set on freeing her kind from the Red Bull</td>
+            </tr>
+            <tr>
+                <td><img src="img/Schmendrick.png" alt="The magician"></td>
+               <td>Schmendrick, The Magician</td>
+		<td>The magician set on helping The Unicorn succeed in<br> her mission.</td>
+
+	    </tr>
+            <tr>
+                <td><img src="img/Molly.png" alt="The Woman"></td>
+		<td>Molly Gru, The Woman</td>
+		<td>The woman who takes care of The Unicorn while she is <br> in human form and guiding her in human ways.<br>Also protects The Unicorn.</td>
+            </tr>
+            <tr>
+                <td><img src="img/prince_leer.png" alt="The Prince"></td>
+               <td>Prince Leer</td>
+		<td>The Prince who falls in love with Amalthea and swears his allegiance to her. <br> He also protects her and helps fight the Red Bull.</td>
+
+	    </tr>
+           
+        </table>
+
+       
+
+         
+
+
+        <button onclick="topFunction()" id="btnTopPage" title="Go To Top" style="display: none;">Scroll To Top</button>
+        <script>
+           
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction(){
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) 
+            {
+
+                document.getElementById("btnTopPage").style.display = "block";
+                setTimeout(
+                    function() {
+                         document.getElementById("btnTopPage").style.display = "none";
+                    }, 10000);
+            } else {
+                document.getElementById("btnTopPage").style.display = "none";
+            }
+            }
+
+            function topFunction(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <table class="footer">
+            <div class="win-taskbar">
+    <button class="win-button active">
+        <img src="apple-touch-icon.png" alt="Logo">
+<a href="index.html">Welcome Page</a>    
+    </button>
+
+	   <button class="win-button active">
+<a href="about.html">About the Movie</a>
+</button>
+            <button class="win-button active">
+<a href="mcs.html">Main Characters</a></button>
+            <button class="win-button active">
+<a href="ant.html">Antagonists</a></button>
+            <button class="win-button active">
+<a href="rb.html">The Red Bull</a></button>
+
+    <div class="taskbar-spacer"></div>
+
+    <div class="local-time">
+        <div class="connection-status connected"></div>
+        <span id="clock"></span>
+    </div>
+</div>
+
+        </table>
+
+    </body>
+</html>
+
+    

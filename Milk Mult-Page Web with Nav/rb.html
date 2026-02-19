@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Red Bull</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>The Red Bull</h1>
+        </center>
+<hr>
+
+<img src="img/rb.png" alt="The Red Bull" class="center"></td>
+
+  <p>The Spirit Beast that King Haggard uses to round up all the unicorns and trap them in the ocean.
+<br><br> Not much is known about its origin or where it came from. My best guess is that it came from magic. </p>
+
+        <button onclick="topFunction()" id="btnTopPage" title="Go To Top" style="display: none;">Scroll To Top</button>
+        <script>
+           
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction(){
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) 
+            {
+
+                document.getElementById("btnTopPage").style.display = "block";
+                setTimeout(
+                    function() {
+                         document.getElementById("btnTopPage").style.display = "none";
+                    }, 10000);
+            } else {
+                document.getElementById("btnTopPage").style.display = "none";
+            }
+            }
+
+            function topFunction(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+        <table class="footer">
+            <div class="win-taskbar">
+    <button class="win-button active">
+        <img src="apple-touch-icon.png" alt="Logo">
+<a href="index.html">Welcome Page</a>    
+    </button>
+
+	   <button class="win-button active">
+<a href="about.html">About the Movie</a>
+</button>
+            <button class="win-button active">
+<a href="mcs.html">Main Characters</a></button>
+            <button class="win-button active">
+<a href="ant.html">Antagonists</a></button>
+            <button class="win-button active">
+<a href="rb.html">The Red Bull</a></button>
+
+    <div class="taskbar-spacer"></div>
+
+    <div class="local-time">
+        <div class="connection-status connected"></div>
+        <span id="clock"></span>
+    </div>
+</div>
+
+        </table>
+
+    </body>
+</html>
+
+
+    

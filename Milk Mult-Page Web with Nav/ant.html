@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <title>Antagonist</title>
+    </head>
+
+    <body>
+        <center>
+            <h1>Antagonists</h1>
+        </center>
+
+
+              <table cellpadding="6">
+<hr>
+            <tr>
+                <th>Antagonists</th>
+                <th>Names</th>
+                <th>Their Roles</th>
+            </tr>
+            <tr>
+                <td><img src="img/kh.png" alt="King Haggard"></td>
+               <td>King Haggard</td>
+		<td>The king who owns the Red Bull and has captured and<br> trapped all but one unicorn in the ocean.</td>
+            </tr>
+            <tr>
+                <td><img src="img/mf.png" alt="Mommy Fortuna"></td>
+               <td>Mommy Fortuna, The Witch</td>
+		<td>The witch who has a traveling freak show carnival<br> where she parades captured harpies and lions. <br> She captures the last unicorn and forces people to see her for what she really is,<br> a unicorn. Ultimately, Mommy Fortuna is killed by the harpy.</td>
+
+	    </tr>
+            <tr>
+                <td><img src="img/rukh.png" alt="Servant son"></td>
+		<td>Rukh, the son and servant of Mommy Fortuna</td>
+		<td>The man who manages the menagerie and tries to hold down <br>Schmedrick to prevent him from freeing the animals. This man is also killed by the harpy.</td>
+            </tr>
+                      
+        </table>
+
+       
+
+         
+
+
+        <button onclick="topFunction()" id="btnTopPage" title="Go To Top" style="display: none;">Scroll To Top</button>
+        <script>
+           
+            window.onscroll = function() { scrollFunction() };
+
+            function scrollFunction(){
+                if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40 ) 
+            {
+
+                document.getElementById("btnTopPage").style.display = "block";
+                setTimeout(
+                    function() {
+                         document.getElementById("btnTopPage").style.display = "none";
+                    }, 10000);
+            } else {
+                document.getElementById("btnTopPage").style.display = "none";
+            }
+            }
+
+            function topFunction(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+       <table class="footer">
+            <div class="win-taskbar">
+    <button class="win-button active">
+        <img src="apple-touch-icon.png" alt="Logo">
+<a href="index.html">Welcome Page</a>    
+    </button>
+
+	   <button class="win-button active">
+<a href="about.html">About the Movie</a>
+</button>
+            <button class="win-button active">
+<a href="mcs.html">Main Characters</a></button>
+            <button class="win-button active">
+<a href="ant.html">Antagonists</a></button>
+            <button class="win-button active">
+<a href="rb.html">The Red Bull</a></button>
+
+    <div class="taskbar-spacer"></div>
+
+    <div class="local-time">
+        <div class="connection-status connected"></div>
+        <span id="clock"></span>
+    </div>
+</div>
+
+        </table>
+
+    </body>
+</html>
+
+
+    

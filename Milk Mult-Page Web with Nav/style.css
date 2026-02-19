@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Redressed&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --font-family-body:       Aleo, serif;
+    --font-family-body-serif: Aleo, serif;
+    --font-family-body-sans:  Raleway, sans-serif;
+    --font-family-heading:    Amaranth, sans-serif;
+    --font-family-cursive:    Redressed, sans-serif;
+    --font-family-mono:       Roboto Mono, monospace;
+  }
+
+body{
+    margin-top: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
+    font-family: var(--font-family-body);
+    font-weight: 300;
+    font-size: 14pt;
+    line-height: 120%;
+  }
+
+
+.win-taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+
+    background: #c0c0c0;
+    border-top: 2px solid #ffffff;
+    box-shadow: inset -1px 0 0 #808080;
+
+    font-family: 'Special Elite', monospace;
+    padding: 0 6px;
+}
+
+.win-button {
+    display: flex;
+    align-items: center;
+
+    background: #c0c0c0;
+    border: 2px solid;
+    border-color: #ffffff #808080 #808080 #ffffff;
+
+    padding: 2px 8px;
+    cursor: pointer;
+}
+
+.win-button.active {
+    border-color: #808080 #ffffff #ffffff #808080;
+}
+
+.win-button img {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.taskbar-spacer {
+    flex: 1;
+}
+
+.local-time {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.connection-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+
+.connection-status.connected {
+    background: limegreen;
+}
+
+
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+:link, :visited{
+    text-decoration: none;
+    color: #008;
+  }
+
+*.davina{ font-variant: small-caps;}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-family-heading);
+    line-height: 120%;
+}
+
+h3{
+    color: chocolate;
+}
+
+h4{
+    color: rgb(92, 91, 91);
+}
+
+table.arch-header{
+    width: 100%;
+    margin-bottom: 0.5em;
+    margin-top: 0.2em;
+}
+
+table.arch-header td{
+    padding-left: 1em;
+    padding-right: 1em;
+    text-align: center;
+}
+
+table.arch-header td:first-child{
+    vertical-align: top;
+    min-width: 100px;
+    width: 25%;
+    padding-top: 2em;
+    margin-top: 2em;
+}
+
+table.arch-header td h1{
+    font-size: 24pt;
+    padding-bottom: 0.2em;
+}
+
+table.arch-header td h2{
+    font-size: 18pt;
+    padding-bottom: 1em;
+}
+
+table.arch-header td h3{
+    font-size: 12pt;
+    padding-bottom: 0.2em;
+}
+
+table.arch-header td h2.fancy{
+    font-family: var(--font-family-cursive);
+    font-style: italic;
+}
+
+table.arch-header td p{
+    font-size: 12pt;
+    font-style: italic;
+}
+
+table.footer{
+    border-collapse: collapse;
+    margin-top: 2em;
+    margin-bottom: 0;
+    padding-left: 1em;
+    padding-right: 1em;
+    border-top-style: solid;
+    border-top-color: #888;
+    width: 100%;
+    background-color: white;
+    font-size: 12pt;
+    font-family: var(--font-family-body-sans);
+}
+
+table.footer td{
+    padding-top: 0.5em;
+    padding-bottom: 0.2em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    text-align: left;
+    vertical-align: top;
+    color: #888;
+}
+
+table.footer td + td{
+    text-align: right;
+}
+
+ul.main{
+    margin-left: 8em;
+}
+
+ul.main.li{
+    margin-left: 1em;
+}
+
+p.main{
+    font-weight: bold;
+    padding-top: 10pt;
+    margin-left: 8em;
+}
+
+#btnTopPage{
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    top: 80%;
+    right: 20px;
+    position: fixed;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+}
+
+
+@media screen and (pointer: coarse) and (hover: none) {
+    body{
+        margin-top: 0.5em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        font-weight: 400;
+    }
+    table.arch-header td h1{
+        font-size: 18pt;
+    }
+    table.arch-header td h2{
+        font-size: 14pt;
+    }
+    table.arch-header td h3{
+        font-size: 12pt;
+    }
+    ul.main, p.main{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    table.nav{
+        font-size: 12pt;
+    }
+
+    #btnTopPage{
+        position: fixed;
+    }
+}
