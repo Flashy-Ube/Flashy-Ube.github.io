@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Kingdom Sound Tracker</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Kingdom Sound Fast Tracker</h1>
+
+<p>Purify your sound. Focus on Christ-centered creation.</p>
+
+</header>
+
+
+<div class="container">
+
+<section class="panel">
+
+<h2>Start Your Fast</h2>
+
+<label>Choose Fast Length</label>
+
+<select id="fastLength">
+<option value="7">7 Days</option>
+<option value="21">21 Days</option>
+<option value="40">40 Days</option>
+</select>
+
+<h3>What are you fasting from?</h3>
+
+<label><input type="checkbox" value="secular"> Secular Music</label>
+<label><input type="checkbox" value="social"> Social Media</label>
+<label><input type="checkbox" value="streaming"> Streaming</label>
+<label><input type="checkbox" value="genres"> Certain Genres</label>
+
+<button onclick="startFast()">Start Fast</button>
+
+</section>
+
+
+<section class="panel">
+
+<h2>Daily Scripture</h2>
+
+<p id="verse"></p>
+
+</section>
+
+
+<section class="panel">
+
+
+<h2>Fast Progress</h2>
+
+<p id="dayCounter"></p>
+
+<div class="progressBar">
+<div id="progressFill"></div>
+</div>
+
+<p id="purityScore"></p>
+
+
+<h3>Daily Check-In</h3>
+
+<p>Did you stay disciplined today?</p>
+
+<button onclick="checkIn(true)">YES</button>
+<button onclick="checkIn(false)">NO</button>
+
+<p id="checkStatus"></p>
+
+
+<h2>Reflection Journal</h2>
+
+<textarea id="journal" placeholder="Write today's reflection..."></textarea>
+
+<button onclick="saveJournal()">Save Entry</button>
+
+<p id="saveStatus"></p>
+
+
+
+<h3>Past Entries</h3>
+<div id="pastEntries"></div>
+
+
+</section>
+
+</div>
+
+<div>
+<section class="panel">
+
+<h2>Fast Timeline</h2>
+
+<div id="fastTimeline"></div>
+<p id="fastDayLabel"></p>
+
+
+</section>
+</div>
+
+<script src="app.js">
+</script>
+
+</body>
+
+</html>

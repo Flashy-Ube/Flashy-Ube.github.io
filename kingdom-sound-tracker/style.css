@@ -1,0 +1,183 @@
+body {
+
+background:#0f0f18;
+
+color:white;
+
+font-family:Arial;
+
+text-align:center;
+
+margin:0;
+
+}
+
+header {
+
+background:#1c1c2e;
+
+padding:30px;
+
+border-bottom:2px solid #6f00ff;
+
+}
+
+h1 {
+
+color:#c084ff;
+
+}
+
+.container {
+
+max-width:800px;
+
+margin:auto;
+
+padding:20px;
+
+}
+
+.panel {
+
+background:#1a1a28;
+
+border:1px solid #6f00ff;
+
+border-radius:8px;
+
+padding:20px;
+
+margin-bottom:20px;
+
+box-shadow:0 0 10px rgba(111,0,255,0.3);
+
+}
+
+textarea {
+
+width:95%;
+
+height:120px;
+
+background:#0f0f18;
+
+color:white;
+
+border:1px solid #6f00ff;
+
+padding:10px;
+
+}
+
+
+button {
+
+display:block;
+margin:15px auto;
+
+padding:10px 20px;
+
+background:#6f00ff;
+
+border:none;
+
+color:white;
+
+cursor:pointer;
+
+border-radius:4px;
+
+}
+
+button:hover {
+
+background:#8b3dff;
+
+}
+
+
+.progressBar {
+
+width:100%;
+
+height:20px;
+
+background:#222;
+
+border:1px solid #6f00ff;
+
+border-radius:6px;
+
+overflow:hidden;
+
+margin:10px 0;
+
+}
+
+
+#progressFill {
+
+height:100%;
+
+width:0%;
+
+background:#6f00ff;
+
+box-shadow:0 0 10px #6f00ff;
+
+}
+
+
+.journalDay{
+
+border:1px solid #6f00ff;
+
+padding:10px;
+
+margin-top:15px;
+
+background:#121220;
+
+border-radius:6px;
+
+}
+
+.journalEntry{
+
+background:#1a1a30;
+
+padding:8px;
+
+margin:5px 0;
+
+border-radius:4px;
+
+}
+
+
+#fastTimeline{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+
+gap:10px;
+
+margin-top:10px;
+
+}
+
+.timelineDay{
+
+background:#181830;
+
+padding:10px;
+
+border:1px solid #6f00ff;
+
+border-radius:5px;
+
+text-align:center;
+
+}
