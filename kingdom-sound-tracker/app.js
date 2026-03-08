@@ -168,13 +168,13 @@ function displayEntries() {
 
 
 
-function loadTodayEntry() {
+/*function loadTodayEntry() {
     const today = new Date().toLocaleDateString();
     const entries = JSON.parse(localStorage.getItem("journalEntries")) || {};
     if (entries[today]) {
         document.getElementById("journal").value = entries[today].join("\n");
     }
-}
+}*/
 
 // to clear journal
 function clearJournal() {
@@ -203,4 +203,5 @@ window.addEventListener("load", () => {
     showFastDay();
 
 });
+
 
