@@ -176,6 +176,16 @@ function loadTodayEntry() {
     }
 }
 
+// to clear journal
+function clearJournal() {
+    if (confirm("Are you sure you want to delete all reflections? This cannot be undone.")) {
+        localStorage.removeItem("journalEntries"); // delete all entries
+        displayEntries(); // update the page to remove displayed entries
+        document.getElementById("saveStatus").innerText = "All reflections cleared!";
+    }
+}
+
+
 // -------------------
 // Load entries when page opens
 // -------------------
@@ -193,3 +203,4 @@ window.addEventListener("load", () => {
     showFastDay();
 
 });
+
