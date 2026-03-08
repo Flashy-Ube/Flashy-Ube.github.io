@@ -1,7 +1,7 @@
 // -------------------
 // Example journal entries preload
 // -------------------
-if (!localStorage.getItem("journalEntries")) {
+/*if (!localStorage.getItem("journalEntries")) {
     const exampleData = {
         "6/9/2026": [
             "Today I removed secular music from my playlist.",
@@ -12,7 +12,7 @@ if (!localStorage.getItem("journalEntries")) {
         ]
     };
     localStorage.setItem("journalEntries", JSON.stringify(exampleData));
-}
+}*/
 
 // -------------------
 // Daily Scripture
@@ -191,4 +191,5 @@ window.addEventListener("load", () => {
     loadFastProgress();
     loadFastTimeline();
     showFastDay();
+
 });
