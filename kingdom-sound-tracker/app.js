@@ -201,7 +201,9 @@ window.addEventListener("load", () => {
     loadFastProgress();
     loadFastTimeline();
     showFastDay();
+    document.getElementByID("journal").value = "";
 
 });
+
 
 
