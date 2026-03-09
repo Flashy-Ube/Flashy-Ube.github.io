@@ -95,21 +95,23 @@ function loadFastTimeline() {
     for (let i=0; i<fastData.length; i++) {
         const dayDate = new Date(start);
         dayDate.setDate(start.getDate() + i);
-        const dateKey = dayDate.toDateString();
+        const dateKey = new Date(dayDate).toDateString();
 
         const dayDiv = document.createElement("div");
         dayDiv.className = "timelineDay";
 
-        let label = `Day ${i+1}`;
+       let label = `Day ${i+1}`;
 
-if (checkins[dateKey] === true){
-    dayDiv.classList.add("timelineSuccess");
-    label += " ✓";
+if(checkins[dateKey] === true){
+label += " ✔";
 }
 
-else if (checkins[dateKey] === false){
-    dayDiv.classList.add("timelineFail");
-    label += " ✗";
+else if(checkins[dateKey] === false){
+label += " ✘";
+}
+
+if(dateKey === today.toDateString()){
+label += " (today)";
 }
 
 if (dayDate.toDateString() === today.toDateString()){
@@ -222,4 +224,5 @@ window.addEventListener("load", () => {
     loadFastTimeline();
     showFastDay();
 });
+
 
