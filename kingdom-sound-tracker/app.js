@@ -1,7 +1,7 @@
 // -------------------
 // Example journal entries preload
 // -------------------
-/*if (!localStorage.getItem("journalEntries")) {
+if (!localStorage.getItem("journalEntries")) {
     const exampleData = {
         "6/9/2026": [
             "Today I removed secular music from my playlist.",
@@ -12,7 +12,7 @@
         ]
     };
     localStorage.setItem("journalEntries", JSON.stringify(exampleData));
-}*/
+}
 
 // -------------------
 // Daily Scripture
@@ -101,9 +101,20 @@ function loadFastTimeline() {
         dayDiv.className = "timelineDay";
 
         let label = `Day ${i+1}`;
-        if (checkins[dateKey] === true) label += " ✔";
-        else if (checkins[dateKey] === false) label += " ✘";
-        if (dayDate.toDateString() === today.toDateString()) label += " (today)";
+
+if (checkins[dateKey] === true){
+    dayDiv.classList.add("timelineSuccess");
+    label += " ✓";
+}
+
+else if (checkins[dateKey] === false){
+    dayDiv.classList.add("timelineFail");
+    label += " ✗";
+}
+
+if (dayDate.toDateString() === today.toDateString()){
+    dayDiv.classList.add("timelineToday");
+}
 
         dayDiv.innerText = label;
         timelineDiv.appendChild(dayDiv);
@@ -168,21 +179,20 @@ function displayEntries() {
 
 
 
-/*function loadTodayEntry() {
+function loadTodayEntry() {
     const today = new Date().toLocaleDateString();
     const entries = JSON.parse(localStorage.getItem("journalEntries")) || {};
     if (entries[today]) {
         document.getElementById("journal").value = entries[today].join("\n");
     }
-}*/
+}
 
-// to clear journal
-function clearJournal() {
-    if (confirm("Are you sure you want to delete all reflections? This cannot be undone.")) {
-        localStorage.removeItem("journalEntries"); // delete all entries
-        displayEntries(); // update the page to remove displayed entries
-        document.getElementById("saveStatus").innerText = "All reflections cleared!";
-    }
+
+//Reset Function
+function resetFast(){
+localStorage.removeItem("fastData");
+localStorage.removeItem("checkins");
+location.reload();
 }
 
 
@@ -201,9 +211,4 @@ window.addEventListener("load", () => {
     loadFastProgress();
     loadFastTimeline();
     showFastDay();
-    document.getElementByID("journal").value = "";
-
 });
-
-
-
