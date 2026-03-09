@@ -101,21 +101,12 @@ function loadFastTimeline() {
         dayDiv.className = "timelineDay";
 
        let label = `Day ${i+1}`;
-
-if(checkins[dateKey] === true){
-label += " ✔";
-}
-
-else if(checkins[dateKey] === false){
-label += " ✘";
-}
-
-if(dateKey === today.toDateString()){
-label += " (today)";
-}
-
-if (dayDate.toDateString() === today.toDateString()){
-    dayDiv.classList.add("timelineToday");
+       if(checkins[dateKey] === true){label += " ✔";}
+       else if(checkins[dateKey] === false){label += " ✘";}
+       if(dateKey === today.toDateString()){label += " (today)";}
+       if (dayDate.toDateString() === today.toDateString()){
+       
+       dayDiv.classList.add("timelineToday");
 }
 
         dayDiv.innerText = label;
@@ -238,6 +229,7 @@ window.addEventListener("load", () => {
     loadFastTimeline();
     showFastDay();
 });
+
 
 
 
