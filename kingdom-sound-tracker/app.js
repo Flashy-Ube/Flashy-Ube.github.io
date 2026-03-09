@@ -157,6 +157,17 @@ function saveJournal() {
     displayEntries();
 }
 
+// --------------------
+//CLear all journal entries
+// -----------------
+function clearJournal() {
+    if (confirm("Are you sure you want to delete all reflections? This cannot be undone.")) {
+        localStorage.removeItem("journalEntries");
+        displayEntries();
+        document.getElementById("saveStatus").innerText = "All reflections cleared!";
+    }
+}
+
 // -------------------
 // Display all saved reflections
 // -------------------
@@ -179,6 +190,9 @@ output += `</div>`;
 document.getElementById("pastEntries").innerHTML = output;
 }
 
+// ----------
+// Delete individual entry
+// ----------
 function deleteEntry(date,index){
 let journalData = JSON.parse(localStorage.getItem("journalEntries")) || {};
 journalData[date].splice(index,1);
@@ -224,5 +238,6 @@ window.addEventListener("load", () => {
     loadFastTimeline();
     showFastDay();
 });
+
 
 
