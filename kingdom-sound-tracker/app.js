@@ -107,6 +107,7 @@ function loadFastTimeline() {
        if (dayDate.toDateString() === today.toDateString()){
        
        dayDiv.classList.add("timelineToday");
+       console.log(label);
 }
 
         dayDiv.innerText = label;
@@ -229,6 +230,7 @@ window.addEventListener("load", () => {
     loadFastTimeline();
     showFastDay();
 });
+
 
 
 
