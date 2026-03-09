@@ -95,7 +95,7 @@ function loadFastTimeline() {
     for (let i=0; i<fastData.length; i++) {
         const dayDate = new Date(start);
         dayDate.setDate(start.getDate() + i);
-        const dateKey = new Date(dayDate).toDateString();
+        const dateKey = dayDate.toDateString();
 
         const dayDiv = document.createElement("div");
         dayDiv.className = "timelineDay";
@@ -229,6 +229,7 @@ window.addEventListener("load", () => {
     loadFastTimeline();
     showFastDay();
 });
+
 
 
 
