@@ -1,7 +1,7 @@
 // -------------------
 // Example journal entries preload
 // -------------------
-if (!localStorage.getItem("journalEntries")) {
+/*if (!localStorage.getItem("journalEntries")) {
     const exampleData = {
         "6/9/2026": [
             "Today I removed secular music from my playlist.",
@@ -12,7 +12,7 @@ if (!localStorage.getItem("journalEntries")) {
         ]
     };
     localStorage.setItem("journalEntries", JSON.stringify(exampleData));
-}
+}*/
 
 // -------------------
 // Daily Scripture
@@ -159,23 +159,33 @@ function saveJournal() {
 // Display all saved reflections
 // -------------------
 function displayEntries() {
-    const journalData = JSON.parse(localStorage.getItem("journalEntries")) || {};
-    let output = "";
-
-    // Sort dates descending so newest is first
-    const sortedDates = Object.keys(journalData).sort((a,b) => new Date(b) - new Date(a));
-
-    sortedDates.forEach(date => {
-        output += `<div class="journalDay"><h4>${date}</h4>`;
-        journalData[date].forEach(entry => {
-            output += `<div class="journalEntry">${entry}</div>`;
-        });
-        output += `</div>`;
-    });
-
-    document.getElementById("pastEntries").innerHTML = output;
+const journalData = JSON.parse(localStorage.getItem("journalEntries")) || {};
+let output = "";
+const sortedDates = Object.keys(journalData).sort((a,b)=> new Date(b) - new Date(a));
+sortedDates.forEach(date => {
+output += `<div class="journalDay"><h4>${date}</h4>`;
+journalData[date].forEach((entry,index)=>{
+output += `
+<div class="journalEntry">
+${entry}
+<button onclick="deleteEntry('${date}',${index})">Delete</button>
+</div>
+`;
+});
+output += `</div>`;
+});
+document.getElementById("pastEntries").innerHTML = output;
 }
 
+function deleteEntry(date,index){
+let journalData = JSON.parse(localStorage.getItem("journalEntries")) || {};
+journalData[date].splice(index,1);
+if(journalData[date].length === 0){
+delete journalData[date];
+}
+localStorage.setItem("journalEntries",JSON.stringify(journalData));
+displayEntries();
+}
 
 
 
@@ -212,3 +222,4 @@ window.addEventListener("load", () => {
     loadFastTimeline();
     showFastDay();
 });
+
