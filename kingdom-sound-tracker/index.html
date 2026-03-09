@@ -14,12 +14,14 @@
 <body>
 
 <header>
-
+<div class="container">
 <h1>Kingdom Sound Fast Tracker</h1>
-
 <p>Purify your sound. Focus on Christ-centered creation.</p>
+</div>
 
 </header>
+
+
 
 
 <div class="container">
@@ -27,48 +29,39 @@
 <section class="panel">
 
 <h2>Start Your Fast</h2>
-
 <label>Choose Fast Length</label>
-
 <select id="fastLength">
 <option value="7">7 Days</option>
 <option value="21">21 Days</option>
 <option value="40">40 Days</option>
 </select>
-
 <h3>What are you fasting from?</h3>
-
 <label><input type="checkbox" value="secular"> Secular Music</label>
 <label><input type="checkbox" value="social"> Social Media</label>
 <label><input type="checkbox" value="streaming"> Streaming</label>
 <label><input type="checkbox" value="genres"> Certain Genres</label>
-
 <button onclick="startFast()">Start Fast</button>
-
 </section>
 
-
 <section class="panel">
-
 <h2>Daily Scripture</h2>
-
 <p id="verse"></p>
-
 </section>
 
-
 <section class="panel">
-
 
 <h2>Fast Progress</h2>
-
 <p id="dayCounter"></p>
 
 <div class="progressBar">
 <div id="progressFill"></div>
 </div>
 
-<p id="purityScore"></p>
+<div class="purityBox>
+<h3>Sound Purity Score</h3>
+<p id="purityScore">100</p>
+<h3>Sound Purity Score</h3>
+</div>
 
 
 <h3>Daily Check-In</h3>
@@ -80,42 +73,40 @@
 
 <p id="checkStatus"></p>
 
+</section>
 
+</div>
+
+
+<div class="container">
 <h2>Reflection Journal</h2>
 
 <textarea id="journal" placeholder="Write today's reflection..."></textarea>
 
 <button onclick="saveJournal()">Save Entry</button>
-<button onclick="clearJournal()">Clear All Reflections</button>
 
 <p id="saveStatus"></p>
+<p id="fastDayLabel"></p>
 
 
 
 <h3>Past Entries</h3>
 <div id="pastEntries"></div>
-
-
-</section>
-
 </div>
 
-<div>
+
+
+
 <section class="panel">
-
 <h2>Fast Timeline</h2>
-
 <div id="fastTimeline"></div>
-<p id="fastDayLabel"></p>
-
-
+<button onclick="resetFast()">Restart Fast</button>
 </section>
-</div>
+
 
 <script src="app.js">
 </script>
 
 </body>
-
 
 </html>
