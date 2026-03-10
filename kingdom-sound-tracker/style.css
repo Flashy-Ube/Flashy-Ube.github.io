@@ -6,7 +6,11 @@ display:flex;
 flex-direction:column;
 align-items:center;
 margin:10px;
-background-image:url("https://www.transparenttextures.com/patterns/aged-paper.png");
+
+background-image: url("YOUR-IMAGE-URL-HERE");
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
 }
 
 .container{
@@ -172,5 +176,6 @@ background:#f3d27a;
 border-color:#a67c00;
 font-weight:bold;
 }
+
 
 
