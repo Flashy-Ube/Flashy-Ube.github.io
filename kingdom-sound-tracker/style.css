@@ -111,6 +111,24 @@ border-left:3px solid #c6a15b;
 padding-left:10px;
 }
 
+.journalEntry {
+    background: #fffdf6;
+    border: 1px solid #d6bf8d;
+    padding: 10px 15px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.journalEntry button {
+    padding: 5px 12px;
+    margin: 0;
+    background: #b33a3a;
+    border-radius: 4px;
+}
+
 #fastTimeline{
 display:flex;
 flex-wrap:wrap;
@@ -154,4 +172,5 @@ background:#f3d27a;
 border-color:#a67c00;
 font-weight:bold;
 }
+
 
