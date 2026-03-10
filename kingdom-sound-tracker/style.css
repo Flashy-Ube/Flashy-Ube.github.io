@@ -1,16 +1,16 @@
 body{
-background:#efe6d0;
+background-color:#efe6d0;
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-image: url("https://raw.githubusercontent.com/Flashy-Ube/Flashy-Ube.github.io/main/kingdom-sound-tracker/images/catholic_art.jpg");
+    
 font-family:"Garamond", serif;
 color:#2b1b0f;
 display:flex;
 flex-direction:column;
 align-items:center;
 margin:10px;
-
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-image: url("https://raw.githubusercontent.com/Flashy-Ube/Flashy-Ube.github.io/main/kingdom-sound-tracker/images/catholic_art.jpg");
 }
 
 
@@ -177,6 +177,7 @@ background:#f3d27a;
 border-color:#a67c00;
 font-weight:bold;
 }
+
 
 
 
