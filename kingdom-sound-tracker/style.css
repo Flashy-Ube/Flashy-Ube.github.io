@@ -6,12 +6,15 @@ display:flex;
 flex-direction:column;
 align-items:center;
 margin:10px;
+}
 
-background-image: url("YOUR-IMAGE-URL-HERE");
+.catholic {
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
+background-image: url("https://raw.githubusercontent.com/Flashy-Ube/Flashy-Ube.github.io/main/kingdom-sound-tracker/images/catholic_art.jpg");
 }
+
 
 .container{
 width:650px;
@@ -176,6 +179,7 @@ background:#f3d27a;
 border-color:#a67c00;
 font-weight:bold;
 }
+
 
 
 
