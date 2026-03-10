@@ -14,6 +14,7 @@ margin:10px;
 }
 
 
+
 .container{
 width:650px;
 background:#fff8e7;
@@ -179,6 +180,15 @@ font-weight:bold;
 }
 
 
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+    background: rgba(255, 248, 231, 0.85);
+    border-top: 2px solid #c6a15b;
+    font-size: 14px;
+}
 
 
 
