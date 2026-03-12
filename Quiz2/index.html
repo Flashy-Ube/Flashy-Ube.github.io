@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Unicorn Trivia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="quiz.js" defer></script>
+</head>
+
+<body>
+
+<div class="unicorn-container">
+  <img src="images/unicorn.png" alt="Spinning Unicorn" class="spinning-unicorn">
+</div>
+
+<main>
+
+  <div class="box quiz-header">
+    <h1>UNICORN KNOWLEDGE TEST</h1>
+    <p>Answer all four questions.</p>
+  </div>
+
+  <form id="quizForm" class="box quiz-form">
+
+    <div class="question">
+      <p>1) What is a unicorn most famous for?</p>
+
+      <input type="radio" name="q1" value="a" id="q1a">
+      <label for="q1a">Breathing fire</label><br>
+
+      <input type="radio" name="q1" value="b" id="q1b">
+      <label for="q1b">Having a single magical horn</label><br>
+
+      <input type="radio" name="q1" value="c" id="q1c">
+      <label for="q1c">Living underwater</label>
+    </div>
+
+    <div class="question">
+      <p>2) What color are unicorns traditionally?</p>
+
+      <input type="radio" name="q2" value="a" id="q2a">
+      <label for="q2a">Green</label><br>
+
+      <input type="radio" name="q2" value="b" id="q2b">
+      <label for="q2b">White</label><br>
+
+      <input type="radio" name="q2" value="c" id="q2c">
+      <label for="q2c">Black</label>
+    </div>
+
+    <div class="question">
+      <p>3) Which powers might a unicorn have?</p>
+
+      <input type="checkbox" class="checkbox" name="q3" value="heal" id="q3a">
+      <label for="q3a">Healing magic</label><br>
+
+      <input type="checkbox" class="checkbox" name="q3" value="fly" id="q3b">
+      <label for="q3b">Flight</label><br>
+
+      <input type="checkbox" class="checkbox" name="q3" value="teleport" id="q3c">
+      <label for="q3c">Teleportation</label>
+    </div>
+
+    <div class="question">
+      <p>4) Where might you find a unicorn?</p>
+
+      <input type="checkbox" class="checkbox" name="q4" value="forest" id="q4a">
+      <label for="q4a">Enchanted forest</label><br>
+
+      <input type="checkbox" class="checkbox" name="q4" value="castle" id="q4b">
+      <label for="q4b">Ancient castle</label><br>
+
+      <input type="checkbox" class="checkbox" name="q4" value="city" id="q4c">
+      <label for="q4c">Modern city</label>
+    </div>
+
+    <button type="button" class="button font submit-btn" onclick="gradeQuiz()">
+      SUBMIT
+    </button>
+
+  </form>
+
+  <div id="result" class="box quiz-result"></div>
+
+</main>
+<div id="app">
+    <app></app>
+</div>
+
+</body>
+</html>
+
+
+
+
