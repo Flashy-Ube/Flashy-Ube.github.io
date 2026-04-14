@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magick Shop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="item.js"></script>
+    </head>
+    <body onload="displayCart(); updateCheckout()">
+
+        <div class="jumbotron text-center banner">
+            <h1>Magick Shop Mcallen</h1>
+            <p>The best Magick shop in the Valley!</p>
+        </div>
+
+        <nav class=" shadow navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+            <a id="cart-link" class="navbar-brand" href="cart.html">Checkout (0)</a>
+        
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+              </li>
+            </ul>
+           </div>
+          </nav>
+
+        <div class="container">
+        <div id="cart"></div>
+        <div id="total"></div>
+        <input type="button" value="Delete All" onclick="sessionStorage.clear(); displayCart(); updateCheckout();">
+        </div>
+    </body>
+</html>
