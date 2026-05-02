@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Monofett&family=Share+Tech+Mono&display=swap');
+
+
+body{
+  background-image: url('images/Background.JPG');
+  background-repeat: no-repeat;
+  background-color: darkslategrey;
+  background-position: center;
+  cursor: url('gif/kuzu420-mosquitoes-13105_128.gif') 8 8, auto;
+  min-height: 100%;
+  overflow-y: scroll;
+}
+
+h1,h2,p,ul,li {
+  font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.companyname{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  border: contain;
+  border-bottom: 10px solid transparent;
+  border-image: url('images/borderbirds.png') 100 round;
+  border-image-outset: 1;
+  border-color: antiquewhite;
+  background-color: #fff9da;
+  padding: 0px;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 6em;
+  cursor: url('gif/kuzu420-mosquitoes-13105_128.gif') 16 16, auto;
+
+}
+
+.main{
+  border: 10px solid transparent;
+  border-image: url('border/fili.png') 30 round;
+  border-image-outset: 1;
+  border-color: antiquewhite;
+  background-color: #fff9da;
+  padding: 0px;
+
+
+}
+
+
+
+.nav{
+  margin-left: 7em;
+  margin-top: 10px;
+  border: 10px solid transparent;
+  border-image: url('border/fili.png') 30 round;
+  border-image-outset: 1;
+  border-color: antiquewhite;
+  max-width: 50%;
+  background-color: #fff9da;
+  padding: 0px;
+  background-size: 50px;
+}
+
+.extra-stuff-on-the-right{
+  margin-left: 7em;
+  margin-top: 10px;
+  border: 10px solid transparent;
+  border-image: url('border/fili.png') 30 round;
+  border-image-outset: 1;
+  border-color: antiquewhite;
+  max-width: 50%;
+  background-color: #fff9da;
+  padding: 0px;
+  background-size: 50px;
+}
+
+.pic{
+  all: initial;
+  background-color: rgb(252, 252, 252);
+  position: relative;
+  padding: 10px;
+  color: black;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: calc(100% - 8px);
+  height: 8em;
+  background-image: url('images/rightbar.JPG');
+  background-position: center 18.5%;
+  padding: 4px;
+  border-top: 2px solid;
+  border-color: white;
+  display: inline;
+  cursor: url('gif/kuzu420-mosquitoes-13105_128.gif') 16 16, auto;
+
+}
+
+#taskbar {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.vl {
+  width: 2px;
+  height: 30px;
+  border: 2px solid ;
+  border-top: 0;
+  border-left: 0;
+  background: whitesmoke;
+}
+
+.banners {
+  flex: 1;
+  height: auto;
+  width: 4em;
+}
+
+.site-date {
+  border: 2px solid;
+  /* top | right | bottom | left */
+  border-color:  whitesmoke whitesmoke;
+  padding: 2px;
+}
+
+.pixel-clock {
+    font-family: "Determination", "pixelmplus12", monospace;
+    font-size: 24px;
+    letter-spacing: 2px;
+
+    /* Pixel crispness */
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    font-smooth: never;
+
+    /* Aesthetic */
+    background: #111;
+    color: #00ffcc;
+    padding: 6px 10px;
+    border: 2px solid #00ffcc;
+    display: inline-block;
+    border-radius: 4px;
+
+    /* Optional glow */
+    text-shadow: 0 0 4px #00ffcc;
+}
+
+
+.sticker {
+  width: 120px;
+  position: absolute;
+  cursor: grab;
+  user-select: none;
+}
