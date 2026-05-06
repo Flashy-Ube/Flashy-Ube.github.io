@@ -93,7 +93,7 @@ footer {
   left: 0;
   bottom: 0;
   width: calc(100% - 8px);
-  height: 8em;
+  height: 6em;
   background-image: url('images/rightbar.JPG');
   background-position: center 18.5%;
   padding: 4px;
